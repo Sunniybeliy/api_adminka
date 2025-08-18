@@ -31,6 +31,12 @@ fetch("http://localhost:3000/questions", {
   headers: { "Content-Type": "application/json" },
   body: JSON.stringify(newQuestion)
 })
+
+question.value = ""
+option1.value = ""
+option2.value = ""
+option3.value = ""
+
 alert( "Sovollar qo'shildi" )
 }
 
