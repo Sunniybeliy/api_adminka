@@ -1,0 +1,124 @@
+/* Whole page background */
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #eef2f3, #d9e4ec);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+/* Center everything inside a card */
+body > div, #finish {
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Question box */
+#question {
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  margin-bottom: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+#question:hover {
+  transform: translateY(-3px);
+}
+#question p {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #444;
+}
+#sovol {
+  width: 90%;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 10px;
+  background: #f8f9fc;
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.08);
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease;
+}
+#sovol:focus {
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.3);
+}
+
+/* Options box */
+#optionBox {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-bottom: 25px;
+}
+
+/* Floating option cards */
+#st, #nd, #rd {
+  background: white;
+  border-radius: 14px;
+  padding: 14px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#st:hover, #nd:hover, #rd:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* Option text inputs */
+#first, #second, #third {
+  flex: 1;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 8px;
+  background: #f5f7fa;
+  font-size: 0.95rem;
+  outline: none;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.07);
+  transition: all 0.3s ease;
+}
+#first:focus, #second:focus, #third:focus {
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(99,102,241,0.3);
+}
+
+/* Radio buttons */
+#bir, #ikki, #uch {
+  transform: scale(1.4);
+  margin-left: 14px;
+  cursor: pointer;
+  accent-color: #6366f1;
+}
+
+/* Submit button */
+#finish {
+  background: linear-gradient(90deg, #6366f1, #8b5cf6);
+  border: none;
+  border-radius: 14px;
+  color: white;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 14px 20px;
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+#finish:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(99,102,241,0.3);
+}
+#finish:active {
+  transform: translateY(1px);
+  box-shadow: 0 4px 10px rgba(99,102,241,0.25);
+}
