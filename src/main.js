@@ -26,7 +26,7 @@ finishButton.onclick = () => {
     }
   }
 
-fetch("http://localhost:3000/questions", {
+fetch("https://api-backend-6gx3.onrender.com/questions", {
   method: "POST",
   headers: { "Content-Type": "application/json" },
   body: JSON.stringify(newQuestion)

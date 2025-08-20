@@ -9,6 +9,7 @@ body {
   margin: 0;
   padding: 20px;
   color: #333;
+  position: relative;
 }
 
 /* Center everything inside a card */
@@ -121,4 +122,10 @@ body > div, #finish {
 #finish:active {
   transform: translateY(1px);
   box-shadow: 0 4px 10px rgba(99,102,241,0.25);
+}
+
+#toFront{
+  position: absolute;
+  margin-left: 76rem;
+  margin-top: 33rem;
 }
